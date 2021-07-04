@@ -1,0 +1,64 @@
+.container {
+  width: 40vw;
+  height: 70vh;
+  align-self: center;
+  margin: auto;
+  margin-top: 10vh;
+  background-image: url(https://nordicapis.com/wp-content/uploads/5-Best-Free-and-Paid-Weather-APIs-2019-e1587582023501.png);
+  background-repeat: repeat-x;
+  background-position: left;
+  animation: mymove 60s infinite;
+
+  box-shadow: 1px 1px 3px 3px #455a64;
+  border-radius: 0.5em;
+}
+.container:hover {
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+.inp {
+  margin-top: 3vh;
+  height: 4vh;
+  width: 20vw;
+  font-size: 20px;
+  color: #37474f;
+  border-radius: 0.5em;
+}
+
+.box {
+  background-color: #006064;
+  padding: 3px;
+  width: 20vw;
+  height: 5vh;
+  top: 5vh;
+  margin: 3vw 9vw;
+  font-size: 20px;
+  color: aliceblue;
+  border-radius: 0.5em;
+}
+
+/* .currtemp {
+  background-color: #006064;
+  border-radius: 0.5em;
+
+  padding: 3px;
+  width: 20vw;
+  height: 5vh;
+  top: 5vh;
+  margin-left: 9vw;
+  font-size: 20px;
+  color: aliceblue;
+} */
+
+.box:hover {
+  background-color: black;
+  transition-duration: 1s;
+  color: aliceblue;
+}
+
+@keyframes mymove {
+  50% {
+    background-position: right;
+  }
+}
