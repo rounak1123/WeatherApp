@@ -4,7 +4,7 @@ export const Temp1 = () => {
   const [city, setCity] = useState(null);
   const [search, setSearch] = useState("Mumbai");
   const [country, setCountry] = useState(null);
-  const [name1, setName1] = useState("");
+
   useEffect(() => {
     const gettemp = async function () {
       if (search) {
@@ -29,9 +29,10 @@ export const Temp1 = () => {
       };
       getcountry();
     }
+    console.log(city);
+    console.log(country);
   }, [search]);
 
-  console.log(country);
   return (
     <div>
       <h1>Weather App</h1>
@@ -51,7 +52,7 @@ export const Temp1 = () => {
         ) : (
           <>
             <div className="box cityName">
-              {search.toUpperCase()}, {country.name}
+              {search.toUpperCase()}, {city.sys.country}
             </div>
             <div className="box currtemp">
               {" "}
